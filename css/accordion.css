@@ -1,0 +1,47 @@
+.accordion {
+  list-style: none;
+  width: 250px;
+}
+
+.accordion li {
+  float: none;
+  height: auto;
+  margin-bottom: 2px;
+  width: 250px;
+}
+
+.accordion .acc-hd {
+  background: #333 url(/images/bg-arrow.png) no-repeat 8px 0;
+  color: #efefef;
+  cursor: pointer;
+  height: 30px;
+  padding-left: 34px;
+  width: 216px;
+}
+
+.accordion .acc-hd h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  height: 30px;
+  line-height: 2.5;
+  margin: 0;
+}
+
+.accordion .open .acc-hd {
+  background: #333 url(/images/bg-arrow-open.png) no-repeat 8px 0;
+}
+
+.accordion .acc-inner {
+  border: 2px solid #888;
+  background-color: #efefef;
+  padding: 10px;
+}
+
+.accordion .acc-bd {
+  overflow: hidden;
+  width: 250px;
+}
+
+.accordion li li {
+  width: 230px;
+}

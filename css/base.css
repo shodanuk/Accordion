@@ -1,0 +1,277 @@
+/* @group General base styles */
+
+html {
+  font-size: 100%;
+}
+
+body{
+  font-size: 62.5%; /* Sets base document font size to 1em = 10px */
+}
+
+/* @end General base styles */
+
+/* @group Content blocks */
+
+.content-block {
+  clear: both;
+  overflow: hidden;
+}
+
+.wrap-left .image, 
+.align-left .image, 
+.align-left .youtube {
+  float: left;
+  margin-bottom: 1em;
+  margin-right: 15px;
+}
+
+.wrap-right .image, 
+.align-right .image, 
+.align-right .youtube {
+  float: right;
+  margin-bottom: 1em;
+  margin-left: 15px;
+}
+
+/* @end Content blocks */
+
+/* @group Form styles */
+form {
+  padding: 0 40px;
+}
+
+fieldset {
+  margin: 0 0 1em;
+}
+
+input {
+  	margin: 0;
+}
+
+.input {
+  clear: left;
+  padding: 0 0 0 170px;
+  margin-bottom: 1px;
+}
+
+.input div {
+  margin: 0.5em 0;
+}
+
+.spacing div{
+  margin-bottom: 2em;
+}
+
+form label,
+form p.label {
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 0 -170px;
+  padding: 4px 10px 1px;
+  width: 150px;
+  float: left;
+}
+
+form p.label {
+  padding-top: 0;
+}
+
+.text input {
+	border: 1px solid #ccc;
+	display: inline;
+	font-family: inherit;
+	font-size: 1em;
+	line-height: 1;
+	margin: 0;
+	padding: 3px;
+	width: 292px;	
+}
+
+.textarea textarea {
+	border: 1px solid #ccc;
+	display: inline;
+	font-family: inherit;
+	font-size: 1em;
+	height: 100px;
+	line-height: 1;
+	margin: 0;
+	padding: 3px;
+	width: 292px;	
+}
+
+.short input,
+.short textarea {
+	width: 142px;
+}
+
+.large input,
+.large textarea {
+	width: 442px;
+}
+
+.select select {
+	border: 1px solid #ccc;
+	display: inline;
+	font-family: inherit;
+	font-size: 1em;
+	line-height: 1;
+	margin: 0;
+	padding: 3px;
+	width: 300px;
+}
+
+.date select {
+  width: 150px;
+}
+
+.short select {
+	width: 150px;
+}
+
+.large select {
+	width: 450px;
+}
+
+.checkbox-group li,
+.radio-group li {
+  position: relative;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: inline;
+  float: none;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+.checkbox input,
+.checkbox-group input,
+.radio-group input {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: -2px;
+}
+
+.checkbox-group {
+  clear: both;
+}
+
+.checkbox-group ul {
+  float: left;
+  width: 100%;
+}
+
+.checkbox-group .columns-2 li{
+  float: left;
+  margin-top: 0;
+  width: 50%;
+}
+
+.checkbox-group .columns-3 li{
+  float: left;
+  margin-top: 0;
+  width: 33%;
+}
+
+.checkbox-group .columns-4 li{
+  float: left;
+  margin-top: 0;
+  width: 25%;
+}
+
+.checkbox div {
+  position: relative;
+}
+
+.checkbox label {
+  float: none;
+  font-weight: normal;
+  margin: 0.5em 0;
+  padding: 0 0 0 25px;
+}
+
+form p {
+  margin: 0.5em 0;
+}
+
+form li {
+  display: block;
+  margin: 0.5em 0;
+}
+
+.note {
+  	color: #454545;
+ 	font-style: italic;
+}
+
+.error {
+	background-color: #FFDFDF;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.text .form-error,
+.select .form-error,
+.textarea .form-error {
+	border-color: #C70707;
+}
+
+.error-message {
+	color: #C70707;
+	font-weight: bold;
+}
+
+.bad {
+	background-color: #FFDFDF;
+	color: #C70707;
+	font-weight: bold;
+  overflow: hidden;
+  padding: 0.5em 10px;
+}
+
+.ok {
+	background-color: #99cc99;
+	color: #006633;
+	font-weight: bold;
+  overflow: hidden;
+  padding: 0.5em 10px;
+}
+/* @end Form styles */
+
+
+/* @group Utility Styles */
+/* 
+Try using overflow:hidden on the element containing the floated elements first.
+
+If that doesn't work or if you need any overflow to NOT be hidden, then use the 
+clearfix class below
+*/
+
+.content-block:after,
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.content-block,
+.clearfix {
+  zoom: 1;
+}
+
+.replacement {
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -5000px;
+}
+
+.cake-sql-log {
+  display: none;
+}
+/* @end Utility Styles */

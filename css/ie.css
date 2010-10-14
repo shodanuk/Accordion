@@ -1,0 +1,23 @@
+/* 
+IE specific styles.
+
+Selectors in this stylesheet target ALL versions of IE by default.
+
+Use the prefix "* html " onto your selector to target IE6 only.
+*/
+
+/* 
+Below is an example of how to use the proprietary Microsoft filter attribute to fix alpha transparency in pngs in IE6. 
+
+Delete crop or scale as appropriate.
+
+Be aware this may render any child 'a' elements unclickable. Try giving them position:relative. 
+*/
+* html #example {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/site/layout/example.png', sizingMethod='crop/scale');
+	background: none;
+}
+
+* html #example a {
+  position: relative;
+}

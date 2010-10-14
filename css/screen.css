@@ -1,0 +1,42 @@
+#wrapper {
+  margin: 50px auto;
+  width: 960px;
+}
+
+body {
+
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.accordion .acc-bd li.last-child,
+.accordion .acc-bd p.last-child,
+.accordion .acc-bd ul.last-child {
+  margin-bottom: 0;
+}
+
+.accordion .acc-bd li {
+  display: list-item;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.accordion .acc-bd ul {
+  list-style: disc outside;
+  margin: 0 0 15px 20px;
+}
+
+.accordion .acc-bd ul li {
+  width: auto;
+}
+
+.accordion .acc-bd ul.checklist {
+  list-style: disc outside;
+}
+
+.accordion .acc-bd ul ul {
+  list-style: circle outside;
+}
