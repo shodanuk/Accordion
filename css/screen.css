@@ -1,15 +1,23 @@
+/*
+
+Accordion demo page styles and styling for accordion content.
+
+*/
 #wrapper {
   margin: 50px auto;
   width: 960px;
 }
 
-body {
-
-}
-
 h1 {
   font-size: 2em;
   margin-bottom: 1em;
+}
+
+p {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 .accordion .acc-bd li.last-child,
@@ -18,25 +26,24 @@ h1 {
   margin-bottom: 0;
 }
 
+.accordion .acc-bd ul {
+  list-style: disc outside;
+  margin: 0 0 15px 20px;
+}
+
 .accordion .acc-bd li {
   display: list-item;
   line-height: 1.5;
   margin-bottom: 6px;
 }
 
-.accordion .acc-bd ul {
-  list-style: disc outside;
-  margin: 0 0 15px 20px;
-}
-
 .accordion .acc-bd ul li {
   width: auto;
 }
-
-.accordion .acc-bd ul.checklist {
-  list-style: disc outside;
-}
-
 .accordion .acc-bd ul ul {
   list-style: circle outside;
+}
+
+.cats {
+  border: 2px solid #cccccc;
 }

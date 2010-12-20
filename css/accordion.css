@@ -1,3 +1,8 @@
+/*
+
+Base structure sizes for accordion component.
+
+*/
 .accordion {
   list-style: none;
   width: 250px;
@@ -11,8 +16,6 @@
 }
 
 .accordion .acc-hd {
-  background: #333 url(/images/bg-arrow.png) no-repeat 8px 0;
-  color: #efefef;
   cursor: pointer;
   height: 30px;
   padding-left: 34px;
@@ -20,20 +23,11 @@
 }
 
 .accordion .acc-hd h3 {
-  font-size: 1.4em;
-  font-weight: normal;
   height: 30px;
-  line-height: 2.5;
   margin: 0;
 }
 
-.accordion .open .acc-hd {
-  background: #333 url(/images/bg-arrow-open.png) no-repeat 8px 0;
-}
-
 .accordion .acc-inner {
-  border: 2px solid #888;
-  background-color: #efefef;
   padding: 10px;
 }
 
@@ -44,4 +38,29 @@
 
 .accordion li li {
   width: 230px;
+}
+
+/*
+
+Default skin
+
+*/
+.accordion .acc-hd {
+  background:url("/images/bg-arrow.png") no-repeat scroll 8px 0 #333333;
+  color:#EFEFEF;
+}
+
+.accordion .acc-hd h3 {
+  font-size:1.4em;
+  font-weight:normal;
+  line-height:2.5;
+}
+
+.accordion .open .acc-hd {
+  background:url("/images/bg-arrow-open.png") no-repeat scroll 8px 0 #333333;
+}
+
+.accordion .acc-inner {
+  background-color:#EFEFEF;
+  border:2px solid #888888;
 }
